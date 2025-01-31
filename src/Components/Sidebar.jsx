@@ -131,7 +131,7 @@ const Sidebar = () => {
                 <p className="mt-4 mb-2 font-semibold text-gray-500 text-xs tracking-wide">SENARAI MODUL</p>
 
                 {/* Data Collection */}
-                <Link to="/data-collection-by-agensi">
+                {/* <Link to="/data-collection-by-agensi">
                     <div
                         className={`flex items-center gap-4 p-2 rounded-lg hover:bg-gray-100 w-full ${isActive('/data-collection-list') ? 'bg-gray-200 text-blue-500' : ''
                             }`}
@@ -141,9 +141,9 @@ const Sidebar = () => {
                         </div>
                         <p className="text-sm"><i>Data Collection byAgensi</i></p>
                     </div>
-                </Link>
+                </Link> */}
                 {/* Data Collection */}
-                <Link to="/data-collection-list">
+                {/* <Link to="/data-collection-list">
                     <div
                         className={`flex items-center gap-4 p-2 rounded-lg hover:bg-gray-100 w-full ${isActive('/data-collection-list') ? 'bg-gray-200 text-blue-500' : ''
                             }`}
@@ -153,10 +153,10 @@ const Sidebar = () => {
                         </div>
                         <p className="text-sm"><i>Data Collection</i></p>
                     </div>
-                </Link>
+                </Link> */}
 
                 {/* Semakan dan Pengesahan Data */}
-                <Link to="/pengesahan-data-list">
+                {/* <Link to="/pengesahan-data-list">
                     <div
                         className={`flex items-center gap-4 p-2 rounded-lg hover:bg-gray-100 w-full ${isActive('/pengesahan-data-list') ? 'bg-gray-200 text-blue-500' : ''
                             }`}
@@ -166,10 +166,10 @@ const Sidebar = () => {
                         </div>
                         <p className="text-sm">Semakan dan Pengesahan Data</p>
                     </div>
-                </Link>
+                </Link> */}
 
                 {/* Metadata */}
-                <Link to="/metadata-list">
+                {/* <Link to="/metadata-list">
                     <div
                         className={`flex items-center gap-4 p-2 rounded-lg hover:bg-gray-100 w-full ${isActive('/metadata-list') ? 'bg-gray-200 text-blue-500' : ''
                             }`}
@@ -179,12 +179,12 @@ const Sidebar = () => {
                         </div>
                         <p className="text-sm">Metadata</p>
                     </div>
-                </Link>
+                </Link> */}
 
                 {/* Customer */}
-                <Link to="/metadata-list">
+                <Link to="/customer-list">
                     <div
-                        className={`flex items-center gap-4 p-2 rounded-lg hover:bg-gray-100 w-full ${isActive('/metadata-list') ? 'bg-gray-200 text-blue-500' : ''
+                        className={`flex items-center gap-4 p-2 rounded-lg hover:bg-gray-100 w-full ${isActive('/customer-list') ? 'bg-gray-200 text-blue-500' : ''
                             }`}
                     >
                         <div className="p-2 bg-white rounded-md shadow-lg">
@@ -195,9 +195,9 @@ const Sidebar = () => {
                 </Link>
 
                 {/* Ticket */}
-                <Link to="/metadata-list">
+                <Link to="/ticket-list">
                     <div
-                        className={`flex items-center gap-4 p-2 rounded-lg hover:bg-gray-100 w-full ${isActive('/metadata-list') ? 'bg-gray-200 text-blue-500' : ''
+                        className={`flex items-center gap-4 p-2 rounded-lg hover:bg-gray-100 w-full ${isActive('/ticket-list') ? 'bg-gray-200 text-blue-500' : ''
                             }`}
                     >
                         <div className="p-2 bg-white rounded-md shadow-lg">

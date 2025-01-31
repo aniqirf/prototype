@@ -123,7 +123,7 @@ const Dashboard = () => {
                             <FaBuilding size={24} />
                         </div>
                         <div>
-                            <h3 className="text-lg font-semibold text-gray-700 mb-2">Jumlah Agensi</h3>
+                            <h3 className="text-lg font-semibold text-gray-700 mb-2">Jumlah Syarikat</h3>
                             <p className="text-4xl font-bold text-pink-500">12</p>
                         </div>
                     </div>

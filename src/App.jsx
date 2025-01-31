@@ -15,6 +15,8 @@ import AuditList from './pages/Audit/AuditList';
 import DataCollectionByAgensi from './pages/DataCollection/DataCollectionByAgensi';
 import DataCollectionByAgensiView from './pages/DataCollection/DataCollectionByAgensiView';
 import Dashboard from './pages/Dashboard/Dashboard';
+import CustomerList from './pages/Customer/CustomerList';
+import TIcketList from './pages/Ticket/TicketList';
 
 function App() {
 
@@ -37,6 +39,8 @@ function App() {
         <Route path="/metadata-detail" element={<MetadataDetail />} />
         <Route path="/pengesahan-data-list" element={<PengesahanDataList />} />
         <Route path="/audit-list" element={<AuditList />} />
+        <Route path="/customer-list" element={<CustomerList />} />
+        <Route path="/ticket-list" element={<TIcketList />} />
       </Routes>
     </Router>
   );
