@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
-import Logo_kpkt from '../../assets/KPKT_Logo.jpeg';
-import Logo_jata from '../../assets/jata_kpkt.png';
+import Logo_Tbsb from '../../assets/tbsb.png';
 import Input from '../../Components/Input';
-import image from '../../assets/city-sunset.jpg';
+import image from '../../assets/port.jpg';
 
 const Login = () => {
     const navigate = useNavigate(); // Hook for navigation
@@ -50,17 +49,12 @@ const Login = () => {
                             onClick={() => navigate('/')}
                         >
                             <img
-                                src={Logo_jata}
+                                src={Logo_Tbsb}
                                 alt="KPKT Logo"
                                 className="w-auto h-24 max-h-24 object-contain"
                             />
-                            <img
-                                src={Logo_kpkt}
-                                alt="KPKT Logo"
-                                className="w-auto h-16 max-h-16 object-contain"
-                            />
                         </div>
-                        <span className="text-black text-xl">KEMENTERIAN PERUMAHAN <br />DAN KERAJAAN TEMPATAN</span>
+                        {/* <span className="text-black text-xl">TOK BALI <br />SUPPLY BASE</span> */}
                     </div>
                     <h1 className="text-3xl font-bold">Selamat Datang</h1>
                     <p className="text-gray-600 mb-8">
@@ -121,7 +115,7 @@ const Login = () => {
             {/* Footer */}
             <footer className="absolute bottom-0 left-0 p-4 text-sm text-gray-600 bg-white w-full lg:bg-transparent">
                 <div className="mb-2 ml-4 flex justify-start">
-                    <p>&copy; {new Date().getFullYear()} Kementerian Perumahan dan Kerajaan Tempatan</p>
+                    <p>&copy; {new Date().getFullYear()} TOK BALI SUPPLY BASE</p>
                 </div>
             </footer>
         </div>

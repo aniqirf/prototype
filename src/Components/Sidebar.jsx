@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-import { FaLayerGroup, FaToolbox, FaLock, FaRocket, FaCogs, FaSync, FaUser } from 'react-icons/fa';
+import { FaLayerGroup, FaToolbox, FaLock, FaCogs, FaSync, FaUser, FaBuilding } from 'react-icons/fa';
 import { FiHome } from 'react-icons/fi';
-import Logo from '../assets/logo_kpkt_only.png';
+import Logo from '../assets/tbsb.png';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { MdAnalytics } from 'react-icons/md';
+import { GiTicket } from 'react-icons/gi';
 
 const Sidebar = () => {
     const location = useLocation(); // Get the current route
@@ -26,10 +28,7 @@ const Sidebar = () => {
                 className="p-4 flex flex-col items-center gap-4 cursor-pointer"
                 onClick={() => navigate('/')} // Navigate to the home route
             >
-                <img src={Logo} alt="KPKT Logo" className="w-20 h-20 object-cover" />
-                <h1 className="text-sm font-semibold text-center tracking-wide">
-                    KEMENTERIAN PERUMAHAN DAN KERAJAAN TEMPATAN
-                </h1>
+                <img src={Logo} alt="KPKT Logo" className="w-28 h-auto object-cover" />
             </div>
 
             {/* Sidebar Menu */}
@@ -129,7 +128,7 @@ const Sidebar = () => {
                     </div>
                 </Link>
 
-                <p className="mt-4 mb-2 font-semibold text-gray-500 text-xs tracking-wide">PENGURUSAN DATA</p>
+                <p className="mt-4 mb-2 font-semibold text-gray-500 text-xs tracking-wide">SENARAI MODUL</p>
 
                 {/* Data Collection */}
                 <Link to="/data-collection-by-agensi">
@@ -182,20 +181,44 @@ const Sidebar = () => {
                     </div>
                 </Link>
 
-                <p className="mt-4 mb-2 font-semibold text-gray-500 text-xs tracking-wide">VISUALIZATION</p>
-
-                {/* MD Analytic Platform */}
-                <a
-                    className={`flex items-center gap-4 p-2 rounded-lg hover:bg-gray-100 w-full ${isOpen.md ? 'bg-gray-200 text-blue-500' : ''
-                        }`}
-                    href="https://muo.mdanalytic.my"
-                    target="_blank"
-                >
-                    <div className="p-2 bg-white rounded-md shadow-lg">
-                        <FaRocket className={`text-blue-500 ${isOpen.md && 'text-blue-700'}`} />
+                {/* Customer */}
+                <Link to="/metadata-list">
+                    <div
+                        className={`flex items-center gap-4 p-2 rounded-lg hover:bg-gray-100 w-full ${isActive('/metadata-list') ? 'bg-gray-200 text-blue-500' : ''
+                            }`}
+                    >
+                        <div className="p-2 bg-white rounded-md shadow-lg">
+                            <FaBuilding className="text-blue-500" />
+                        </div>
+                        <p className="text-sm">Customer Registration & Management</p>
                     </div>
-                    <p className="text-sm">MD Analytic Platform</p>
-                </a>
+                </Link>
+
+                {/* Ticket */}
+                <Link to="/metadata-list">
+                    <div
+                        className={`flex items-center gap-4 p-2 rounded-lg hover:bg-gray-100 w-full ${isActive('/metadata-list') ? 'bg-gray-200 text-blue-500' : ''
+                            }`}
+                    >
+                        <div className="p-2 bg-white rounded-md shadow-lg">
+                            <GiTicket className="text-blue-500" />
+                        </div>
+                        <p className="text-sm">Job Ticket Management</p>
+                    </div>
+                </Link>
+
+                {/* Reporting */}
+                <Link to="/metadata-list">
+                    <div
+                        className={`flex items-center gap-4 p-2 rounded-lg hover:bg-gray-100 w-full ${isActive('/metadata-list') ? 'bg-gray-200 text-blue-500' : ''
+                            }`}
+                    >
+                        <div className="p-2 bg-white rounded-md shadow-lg">
+                            <MdAnalytics className="text-blue-500" />
+                        </div>
+                        <p className="text-sm">Reporting & Analytics</p>
+                    </div>
+                </Link>
             </div>
         </div>
     );

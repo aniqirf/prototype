@@ -120,7 +120,7 @@ const Analitik = () => {
         { label: "Senarai Analitik" },
     ];
     return (
-        <Layout title='Analitik' subtitle='Memaparkan kesemua tetapan paparan analitik di dalam system Kementerian Perumahan dan Kerajaan Tempatan' breadcrumb={breadcrumb}>
+        <Layout title='Analitik' subtitle='Memaparkan kesemua tetapan paparan analitik di dalam system TOK BALI SUPPLY BASE' breadcrumb={breadcrumb}>
             <div className="flex">
                 <div className="w-full">
                     <div className='flex justify-between'>

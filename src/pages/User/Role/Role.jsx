@@ -132,7 +132,7 @@ const Role = () => {
         { label: "Roles & Permission" },
     ];
     return (
-        <Layout title='Tetapan Peranan' subtitle='Memaparkan kesemua tetapan peranan di dalam system Kementerian Perumahan dan Kerajaan Tempatan' breadcrumb={breadcrumb}>
+        <Layout title='Tetapan Peranan' subtitle='Memaparkan kesemua tetapan peranan di dalam system TOK BALI SUPPLY BASE' breadcrumb={breadcrumb}>
             <div className="flex">
                 <div className="w-full">
                     <div className='flex justify-between'>

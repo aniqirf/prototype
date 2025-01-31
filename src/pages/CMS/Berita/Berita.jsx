@@ -115,7 +115,7 @@ const Berita = () => {
             { label: "Berita" },
         ];
     return (
-        <Layout title='Berita' subtitle='Memaparkan kesemua tetapan paparan berita di dalam system Kementerian Perumahan dan Kerajaan Tempatan' breadcrumb={breadcrumb}>
+        <Layout title='Berita' subtitle='Memaparkan kesemua tetapan paparan berita di dalam system TOK BALI SUPPLY BASE' breadcrumb={breadcrumb}>
             <div className="flex">
                 <div className="w-full">                    
                     <div className='flex justify-between'>
