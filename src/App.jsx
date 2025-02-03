@@ -17,6 +17,7 @@ import DataCollectionByAgensiView from './pages/DataCollection/DataCollectionByA
 import Dashboard from './pages/Dashboard/Dashboard';
 import CustomerList from './pages/Customer/CustomerList';
 import TIcketList from './pages/Ticket/TicketList';
+import Review from './pages/Ticket/Review';
 
 function App() {
 
@@ -41,6 +42,7 @@ function App() {
         <Route path="/audit-list" element={<AuditList />} />
         <Route path="/customer-list" element={<CustomerList />} />
         <Route path="/ticket-list" element={<TIcketList />} />
+        <Route path="/ticket-review" element={<Review />} />
       </Routes>
     </Router>
   );
