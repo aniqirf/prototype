@@ -18,6 +18,7 @@ import Dashboard from './pages/Dashboard/Dashboard';
 import CustomerList from './pages/Customer/CustomerList';
 import TIcketList from './pages/Ticket/TicketList';
 import Review from './pages/Ticket/Review';
+import ReportingAnalytics from './pages/Metadata/ReportingAnalytics';
 
 function App() {
 
@@ -25,7 +26,7 @@ function App() {
     <Router>
       <Routes>
         {/* <Route path="/test" element={<Test />} /> */}
-        <Route path="/" element={<LandingPage />} />
+        <Route path="/" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/login" element={<Login />} />
         <Route path="/user-list" element={<UserList />} />
@@ -36,7 +37,7 @@ function App() {
         <Route path="/data-collection-list" element={<DataCollectionList />} />
         <Route path="/data-collection-by-agensi" element={<DataCollectionByAgensi />} />
         <Route path="/data-collection-by-agensi-view" element={<DataCollectionByAgensiView />} />
-        <Route path="/metadata-list" element={<MetadataList />} />
+        <Route path="/metadata-list" element={<ReportingAnalytics />} />
         <Route path="/metadata-detail" element={<MetadataDetail />} />
         <Route path="/pengesahan-data-list" element={<PengesahanDataList />} />
         <Route path="/audit-list" element={<AuditList />} />
