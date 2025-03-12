@@ -19,6 +19,7 @@ import CustomerList from './pages/Customer/CustomerList';
 import TIcketList from './pages/Ticket/TicketList';
 import Review from './pages/Ticket/Review';
 import ReportingAnalytics from './pages/Metadata/ReportingAnalytics';
+import Landing from './pages/Landing/Landing';
 
 function App() {
 
@@ -26,7 +27,7 @@ function App() {
     <Router>
       <Routes>
         {/* <Route path="/test" element={<Test />} /> */}
-        <Route path="/" element={<Login />} />
+        <Route path="/" element={<Landing />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/login" element={<Login />} />
         <Route path="/user-list" element={<UserList />} />
